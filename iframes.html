@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Iframe</title>
+    <style>
+        #menu section {
+            background: linear-gradient(to left, black, grey);
+            padding: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            text-shadow: 9px;
+
+        }
+
+        a {
+            color: wheat;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+
+
+        }
+
+        #menu {
+            flex: 1;
+            border-right: 5px solid black;
+            padding: 5px;
+            background: linear-gradient(to right, black, grey);
+
+        }
+
+        #iframe {
+            flex: 4;
+            padding: 5px;
+            display: flex;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+            /* background-image: linear-gradient(red, yellow); */
+            background-image: linear-gradient(black, grey);
+
+        }
+
+        .firstframe {
+            height: 100%;
+            width: 250px;
+
+            background: linear-gradient(to left, black, grey);
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <section id="menu">
+            <section>
+                <a href="mobiles.html" target="leftpannel">Mobiles</a>
+            </section>
+            <section>
+                <a href="televisions.html" target="leftpannel">Televisions</a>
+            </section>
+            <section>
+                <a href="laptops.html" target="leftpannel">Laptops</a>
+            </section>
+        </section>
+
+        <section id="iframe">
+            <iframe name="leftpannel" class="firstframe"></iframe>
+
+
+            <iframe name="rightpanel">
+
+            </iframe>
+        </section>
+
+    </section>
+</body>
+
+</html>
